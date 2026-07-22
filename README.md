@@ -1,5 +1,12 @@
-# My First Repository
+# Web Development Internship - Day 1
 
-Hello GitHub!
+Completed:
+- Installed VS Code
+- Installed Git
+- Installed Google Chrome
+- Installed VS Code Extensions
+- Created GitHub Account
+- Initialized Git Repository
+- Made First Git Commit
 
-This repository is created as a part of my internship Day 1 task.
+Internship: Codomax Digital Solutions
