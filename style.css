@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    padding:20px 80px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#0077ff;
+}
+
+.hero h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    width:700px;
+    max-width:100%;
+    margin:auto;
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+.about{
+    padding:80px;
+    text-align:center;
+    background:white;
+}
+
+.about h2{
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    width:900px;
+    max-width:100%;
+    margin:auto;
+}
