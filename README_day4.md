@@ -26,3 +26,26 @@ This project is developed as part of my **Web Development Internship** at **Codo
 - GitHub
 
 ## 📂 Project Structure
+
+portfolio/
+│
+├── index.html
+├── style.css
+├── images/
+└── README.md
+
+## 🚀 Features
+- Semantic HTML structure
+- Sticky navigation bar
+- Modern Hero section
+- Skills section
+- Education section
+- Contact form
+- Responsive-friendly layout
+- Hover effects
+- Professional footer
+
+## 📌 Author
+
+**Arav Raj**  
+B.Tech CSE Student | Aspiring Software Development Engineer
