@@ -15,7 +15,9 @@ body{
     line-height:1.6;
 }
 
-/* Navigation */
+/* =========================
+   Header & Navigation
+========================= */
 
 header{
     background:#0f172a;
@@ -23,6 +25,7 @@ header{
     padding:18px 60px;
     position:sticky;
     top:0;
+    z-index:1000;
 }
 
 nav{
@@ -38,30 +41,37 @@ nav h2{
 nav ul{
     display:flex;
     list-style:none;
-}
-
-nav ul li{
-    margin-left:25px;
+    gap:25px;
 }
 
 nav ul li a{
     text-decoration:none;
     color:white;
     font-weight:500;
-    transition:.3s;
+    transition:0.3s;
 }
 
 nav ul li a:hover{
     color:#38bdf8;
 }
 
-/* Hero */
+/* =========================
+   Hero Section
+========================= */
 
 .hero{
-    text-align:center;
-    padding:120px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:90vh;
+    padding:80px 10%;
     background:linear-gradient(135deg,#2563eb,#7c3aed);
     color:white;
+    text-align:center;
+}
+
+.hero-text{
+    max-width:700px;
 }
 
 .hero h1{
@@ -73,27 +83,28 @@ nav ul li a:hover{
 }
 
 .hero h3{
-    margin-top:15px;
+    margin:15px 0;
     font-size:26px;
 }
 
 .hero p{
-    width:70%;
-    margin:20px auto;
+    font-size:18px;
+    margin-bottom:25px;
 }
 
-/* Button */
+/* =========================
+   Button
+========================= */
 
 .btn{
     display:inline-block;
-    margin-top:20px;
+    padding:12px 30px;
     background:white;
     color:#2563eb;
-    padding:12px 28px;
     text-decoration:none;
+    font-weight:600;
     border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .btn:hover{
@@ -101,7 +112,9 @@ nav ul li a:hover{
     color:black;
 }
 
-/* Common Section */
+/* =========================
+   Common Section
+========================= */
 
 section{
     padding:70px 10%;
@@ -114,79 +127,112 @@ section h2{
     color:#2563eb;
 }
 
-/* About */
+/* =========================
+   About
+========================= */
 
 .about p{
     max-width:900px;
     margin:auto;
     text-align:center;
+    font-size:18px;
 }
 
-/* Skills */
+/* =========================
+   Skills (CSS Grid)
+========================= */
 
 #skills ul{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
     list-style:none;
+    max-width:900px;
+    margin:auto;
 }
 
 #skills li{
     background:#2563eb;
     color:white;
-    padding:12px 20px;
-    border-radius:8px;
+    padding:18px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:600;
+    transition:0.3s;
 }
 
-/* Education */
+#skills li:hover{
+    transform:translateY(-5px);
+    background:#1d4ed8;
+}
+
+/* =========================
+   Education
+========================= */
+
+#education{
+    display:grid;
+    gap:25px;
+}
 
 #education article{
     background:white;
-    margin:20px auto;
     padding:25px;
-    max-width:700px;
     border-radius:10px;
-    box-shadow:0 5px 12px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+#education article:hover{
+    transform:translateY(-5px);
 }
 
 #education h3{
     color:#2563eb;
+    margin-bottom:10px;
 }
 
-/* Contact */
+/* =========================
+   Contact
+========================= */
 
 form{
-    max-width:650px;
+    max-width:700px;
     margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 input,
 textarea{
     width:100%;
     padding:14px;
-    margin:10px 0 20px;
     border:1px solid #ccc;
     border-radius:8px;
     font-size:16px;
 }
 
 button{
+    width:200px;
+    align-self:center;
+    padding:14px;
+    border:none;
+    border-radius:8px;
     background:#2563eb;
     color:white;
-    border:none;
-    padding:14px 25px;
-    border-radius:8px;
     cursor:pointer;
     font-size:16px;
-    transition:.3s;
+    transition:0.3s;
 }
 
 button:hover{
     background:#1d4ed8;
 }
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 
 footer{
     background:#0f172a;
@@ -194,4 +240,83 @@ footer{
     text-align:center;
     padding:25px;
     margin-top:40px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width:768px){
+
+    header{
+        padding:15px 20px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .hero{
+        padding:80px 20px;
+        min-height:auto;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h3{
+        font-size:22px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:60px 20px;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    button{
+        width:100%;
+    }
+}
+
+@media (max-width:480px){
+
+    nav h2{
+        font-size:24px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero h3{
+        font-size:18px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+    }
+
+    #skills ul{
+        grid-template-columns:1fr;
+    }
 }
