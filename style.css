@@ -307,16 +307,22 @@ footer{
 }
 
 /* =========================
-   Experience Section
+   Experience
 ========================= */
+
+#experience{
+
+    background:#f8fafc;
+
+}
 
 .experience-container{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-    gap:25px;
+    gap:30px;
 
     margin-top:40px;
 
@@ -326,19 +332,39 @@ footer{
 
     background:white;
 
-    padding:25px;
+    padding:30px;
 
-    border-radius:12px;
+    border-radius:15px;
 
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
     transition:.3s;
+
+    border-top:5px solid #2563eb;
 
 }
 
 .experience-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
+
+}
+
+.experience-card span{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
+
+    font-size:14px;
 
 }
 
@@ -352,18 +378,68 @@ footer{
 
 .experience-card h4{
 
-    margin-bottom:10px;
+    color:#666;
 
-    color:#555;
+    margin-bottom:15px;
 
 }
 
-@media(max-width:768px){
+/* =========================
+   Skills Section
+========================= */
 
-    .experience-container{
+#skills{
+    background:#f8fafc;
+}
 
-        grid-template-columns:1fr;
+.skills-container{
 
-    }
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.skill-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
+
+}
+
+.skill-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.skill-card p{
+
+    color:#555;
+
+    line-height:1.6;
 
 }
