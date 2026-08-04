@@ -529,3 +529,107 @@ footer{
     }
 
 }
+
+/* =========================
+   Day 11 Animations
+========================= */
+
+/* Smooth page scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Hero Animation */
+
+.hero-text{
+    animation:fadeInUp 1s ease;
+}
+
+/* Section Animation */
+
+section{
+    animation:fadeInUp .8s ease;
+}
+
+/* Card Animation */
+
+.skill-card,
+.project-card,
+.experience-card{
+
+    transition:.4s ease;
+
+}
+
+.skill-card:hover,
+.project-card:hover,
+.experience-card:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+}
+
+/* Buttons */
+
+.btn,
+.project-btn,
+button{
+
+    transition:.3s ease;
+
+}
+
+.btn:hover,
+.project-btn:hover,
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Navigation */
+
+nav a{
+
+    position:relative;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:#38bdf8;
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
