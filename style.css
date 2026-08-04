@@ -633,3 +633,69 @@ nav a:hover::after{
     width:100%;
 
 }
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:80px 10%;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.hero-image img{
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+@media(max-width:768px){
+
+    .hero-content{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-image img{
+
+        width:220px;
+        height:220px;
+
+    }
+
+}
